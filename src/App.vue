@@ -44,6 +44,7 @@ function handleSearch() {
               active-class="nav-link-active"
               to="/recommended"
             >
+              <i class="fa-solid fa-film"></i>
               Cinemas
             </RouterLink>
           </li>
@@ -54,6 +55,7 @@ function handleSearch() {
               active-class="nav-link-active"
               to="/about"
             >
+              <i class="fa-solid fa-circle-info"></i>
               About
             </RouterLink>
           </li>
@@ -66,6 +68,7 @@ function handleSearch() {
               data-bs-toggle="dropdown"
               aria-expanded="false"
             >
+              <i class="fa-solid fa-lock"></i>
               Auth
             </a>
 
@@ -86,6 +89,7 @@ function handleSearch() {
 
           <li class="nav-item">
             <span class="nav-link disabled-link">
+              <i class="fa-solid fa-receipt"></i>
               Coupons
             </span>
           </li>
@@ -226,7 +230,7 @@ function handleSearch() {
 
 .app-footer {
   margin-top: 3rem;
-  padding: 1.5rem 0;
+  padding: 3rem 0;
   background: #111827;
   color: rgba(255, 255, 255, 0.75);
 }

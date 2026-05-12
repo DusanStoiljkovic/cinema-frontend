@@ -178,6 +178,7 @@ onMounted(fetchMovies)
                 :to="`/details/${movie.movieId}`"
                 class="btn details-btn w-100"
               >
+              <i class="fa-solid fa-link"></i>
                 Details
               </RouterLink>
             </div>

@@ -193,6 +193,7 @@ watch(movieId, fetchMovie, { immediate: true })
                   to="/"
                   class="btn btn-back"
                 >
+                  <i class="fa-solid fa-arrow-left"></i>
                   Back to movies
                 </RouterLink>
 
@@ -200,6 +201,7 @@ watch(movieId, fetchMovie, { immediate: true })
                   :to="`/booking/${movie.movieId}`"
                   class="btn btn-book"
                 >
+                  <i class="fa-solid fa-ticket"></i>
                   Book tickets
                 </RouterLink>
               </div>
@@ -210,7 +212,10 @@ watch(movieId, fetchMovie, { immediate: true })
 
       <div class="movie-info-card mt-4">
         <div class="card-body p-4">
-          <h5 class="section-title mb-3">Movie info</h5>
+          <h5 class="section-title mb-3">
+            <i class="fa-solid fa-circle-info"></i>
+            Movie info
+        </h5>
 
           <div class="table-responsive">
             <table class="table movie-info-table align-middle mb-0">
