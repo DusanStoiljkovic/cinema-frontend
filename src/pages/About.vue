@@ -1,3 +1,12 @@
+<script lang="ts" setup>
+import axios from 'axios'
+import { ref } from 'vue';
+
+const data = ref<any>()
+axios.get("http://localhost:3300").then(rsp => data.value = rsp.data)
+
+</script>
+
 <template>
   <section class="about-page">
     <div class="about-hero text-center">
@@ -73,6 +82,8 @@
             Explore movies
           </RouterLink>
         </div>
+
+        <pre>{{ data }}</pre>
       </div>
     </div>
   </section>
